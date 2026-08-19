@@ -1,0 +1,806 @@
+/* =========================
+   BASIC CSS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333333;
+    background-color: #f5f7f5;
+    line-height: 1.6;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background-color: #064e3b;
+    color: white;
+
+    padding: 20px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo h2 {
+    font-size: 25px;
+}
+
+
+nav ul {
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+
+    list-style: none;
+}
+
+
+nav a {
+    color: white;
+    font-size: 15px;
+}
+
+
+nav a:hover {
+    color: #f0c84b;
+}
+
+
+/* =========================
+   HEADER BUY NOW BUTTON
+========================= */
+
+.header-button {
+    background-color: #d4af37;
+    color: white !important;
+
+    padding: 10px 18px;
+
+    border: 2px solid #d4af37;
+    border-radius: 5px;
+
+    font-weight: bold;
+}
+
+
+.header-button:hover {
+    background-color: #b8941f;
+    border-color: #b8941f;
+}
+
+
+/* =========================
+   GENERAL BUY BUTTON
+========================= */
+
+.buy-button {
+    display: inline-block;
+
+    background-color: #d4af37;
+    color: white;
+
+    padding: 10px 22px;
+
+    border: 2px solid #d4af37;
+    border-radius: 5px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.buy-button:hover {
+    background-color: #b8941f;
+    border-color: #b8941f;
+}
+
+
+.buy-button:active {
+    background-color: #064e3b;
+    border-color: #064e3b;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    background-color: #eaf2ed;
+
+    padding: 60px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 50px;
+}
+
+
+.hero-text {
+    width: 55%;
+}
+
+
+.small-title {
+    color: #a17c12;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+
+.hero h1 {
+    color: #064e3b;
+
+    font-size: 42px;
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+
+.description {
+    color: #444444;
+
+    font-size: 16px;
+
+    margin-bottom: 20px;
+
+    max-width: 650px;
+}
+
+
+.price {
+    color: #333333;
+
+    font-size: 18px;
+
+    margin-bottom: 20px;
+}
+
+
+.price strong {
+    color: #064e3b;
+    font-size: 26px;
+}
+
+
+/* =========================
+   E-BOOK COVER
+========================= */
+
+.hero-image {
+    width: 40%;
+    text-align: center;
+}
+
+
+.hero-image img {
+    width: 300px;
+    height: 420px;
+
+    object-fit: cover;
+
+    border: 3px solid #d4af37;
+    border-radius: 5px;
+
+    display: block;
+
+    margin: auto;
+}
+
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-title {
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+
+.section-title p {
+    color: #a17c12;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+
+.section-title h2 {
+    color: #064e3b;
+
+    font-size: 30px;
+}
+
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about {
+    background-color: white;
+
+    padding: 60px 8%;
+}
+
+
+.about-content {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 40px;
+}
+
+
+.about-text {
+    width: 60%;
+}
+
+
+.about-text p {
+    color: #555555;
+
+    font-size: 15px;
+
+    margin-bottom: 15px;
+}
+
+
+.learning {
+    width: 35%;
+
+    background-color: #eaf2ed;
+
+    padding: 25px;
+
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+
+.learning h3 {
+    color: #064e3b;
+
+    font-size: 21px;
+
+    margin-bottom: 15px;
+}
+
+
+.learning ul {
+    padding-left: 20px;
+}
+
+
+.learning li {
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   FEATURES SECTION
+========================= */
+
+.features {
+    background-color: #f5f7f5;
+
+    padding: 60px 8%;
+}
+
+
+/* Flexbox Requirement */
+
+.feature-container {
+    display: flex;
+
+    gap: 20px;
+}
+
+
+.feature-card {
+    width: 33.33%;
+
+    background-color: white;
+
+    padding: 25px;
+
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+
+    text-align: center;
+}
+
+
+.icon {
+    font-size: 30px;
+
+    margin-bottom: 10px;
+}
+
+
+.feature-card h3 {
+    color: #064e3b;
+
+    font-size: 20px;
+
+    margin-bottom: 10px;
+}
+
+
+.feature-card p {
+    color: #666666;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   PRICING SECTION
+========================= */
+
+.pricing {
+    background-color: white;
+
+    padding: 60px 8%;
+
+    text-align: center;
+}
+
+
+.pricing-card {
+    width: 330px;
+    max-width: 100%;
+
+    margin: auto;
+
+    padding: 30px;
+
+    background-color: #eaf2ed;
+
+    border: 2px solid #d4af37;
+    border-radius: 5px;
+}
+
+
+.pricing-card h3 {
+    color: #064e3b;
+
+    font-size: 21px;
+
+    margin-bottom: 15px;
+}
+
+
+.old-price {
+    color: #888888;
+
+    font-size: 16px;
+
+    text-decoration: line-through;
+}
+
+
+.new-price {
+    color: #064e3b;
+
+    font-size: 36px;
+    font-weight: bold;
+
+    margin: 5px 0;
+}
+
+
+.save-text {
+    margin-bottom: 15px;
+}
+
+
+.pricing-card .buy-button {
+    width: 100%;
+}
+
+
+/* =========================
+   ORDER FORM
+========================= */
+
+.order {
+    background-color: #eaf2ed;
+
+    padding: 60px 8%;
+}
+
+
+form {
+    width: 500px;
+    max-width: 100%;
+
+    margin: auto;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+
+form label {
+    display: block;
+
+    color: #064e3b;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+
+form input,
+form select {
+    width: 100%;
+    height: 40px;
+
+    padding: 10px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+
+    font-size: 14px;
+}
+
+
+form button {
+    width: 100%;
+}
+
+
+/* =========================
+   CUSTOMER REVIEWS
+========================= */
+
+.reviews {
+    background-color: white;
+
+    padding: 60px 8%;
+}
+
+
+.review-container {
+    display: flex;
+
+    gap: 20px;
+}
+
+
+.review-card {
+    width: 33.33%;
+
+    background-color: #f5f7f5;
+
+    padding: 25px;
+
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+
+    text-align: center;
+}
+
+
+/* Golden Five Stars */
+
+.review-card p.stars {
+    color: #d4af37;
+
+    font-size: 20px;
+
+    margin-bottom: 10px;
+
+    letter-spacing: 2px;
+}
+
+
+.review-card p {
+    color: #555555;
+
+    font-size: 14px;
+
+    margin-bottom: 10px;
+}
+
+
+.review-card h4 {
+    color: #064e3b;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   FAQ SECTION
+========================= */
+
+.faq {
+    background-color: #f5f7f5;
+
+    padding: 60px 8%;
+}
+
+
+.faq details {
+    width: 700px;
+    max-width: 100%;
+
+    margin: 0 auto 10px;
+
+    padding: 15px;
+
+    background-color: white;
+
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+
+
+/* FAQ QUESTION */
+
+.faq summary {
+    color: #064e3b;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    list-style: none;
+
+    position: relative;
+
+    padding-right: 35px;
+}
+
+
+/* Remove Default Browser Arrow */
+
+.faq summary::-webkit-details-marker {
+    display: none;
+}
+
+
+/* Custom Down Arrow */
+
+.faq summary::after {
+    content: "▼";
+
+    position: absolute;
+
+    right: 5px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #d4af37;
+
+    font-size: 14px;
+}
+
+
+/* Rotate Arrow When FAQ Is Open */
+
+.faq details[open] summary::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+
+.faq details p {
+    color: #555555;
+
+    font-size: 14px;
+
+    margin-top: 10px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #064e3b;
+
+    color: white;
+
+    padding: 40px 8% 20px;
+}
+
+
+.footer-content {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    margin-bottom: 30px;
+}
+
+
+.footer-content > div {
+    width: 33.33%;
+}
+
+
+footer h3 {
+    color: #d4af37;
+
+    font-size: 19px;
+
+    margin-bottom: 10px;
+}
+
+
+footer p {
+    color: #dddddd;
+
+    font-size: 13px;
+}
+
+
+footer a {
+    color: #dddddd;
+}
+
+
+footer a:hover {
+    color: #d4af37;
+}
+
+
+.copyright {
+    border-top: 1px solid #3d7565;
+
+    padding-top: 15px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 700px) {
+
+    /* Header */
+
+    header {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    nav ul {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    .hero-text {
+        width: 100%;
+    }
+
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+
+    .hero-image {
+        width: 100%;
+    }
+
+
+    .hero-image img {
+        width: 250px;
+
+        height: 350px;
+    }
+
+
+    /* About */
+
+    .about-content {
+        flex-direction: column;
+    }
+
+
+    .about-text {
+        width: 100%;
+    }
+
+
+    .learning {
+        width: 100%;
+    }
+
+
+    /* Features */
+
+    .feature-container {
+        flex-direction: column;
+    }
+
+
+    .feature-card {
+        width: 100%;
+    }
+
+
+    /* Reviews */
+
+    .review-container {
+        flex-direction: column;
+    }
+
+
+    .review-card {
+        width: 100%;
+    }
+
+
+    /* Footer */
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+
+    .footer-content > div {
+        width: 100%;
+    }
+
+}
